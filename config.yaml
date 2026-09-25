@@ -1,0 +1,168 @@
+trigger_key: f9
+pause_key: f10
+reset_key: f11
+exit_key: esc
+
+-BT:
+  nama desa: lipursari
+  nomor hak: 
+            "191,196,189,179,176,162,155"
+ -SU: 
+  SU1: true
+  nama desa: lipursari
+    nomor su: 
+            "1,102,148,33,2,12,44,34"
+            "23,13,14,24,3,15,35,16,36,73"
+            "17,28,46,29,4,30,37,25,38,5"
+            "31,18,19,32,6,39,20,40,45,21"
+            "7,9,41,42,43,10,22,26,11"
+  tahun su: 2013
+  SU2: false
+  nama desa:  lumajang
+    nomor su: 
+            "1360,1361,1362,1363,"
+  tahun su: 2021
+  SU3: false
+  nama desa:  lumajang
+    nomor su: 
+            "855,856,857,858,859,860,861,862,863,864,"
+            "865,866,867,868,869,870,871,872,873,874,"
+            "875,876,877,878,879,880,881,882,883,884,"
+            "885,886,887,888,889,890,891,892,893,894,"
+            "895,896,897,898,899,900,901,902,903,904,"
+  tahun su: 2021
+  SU4: false
+  nama desa:  lumajang
+    nomor su: 
+            "2065,2066,2067,2068,2069,2070,2071,2072,2073,2074,"
+            "2075,2076,2077,2078,2079,2080,2081,2082,2083,2084,"
+            "2085,2086,2087,2088,2089,2090,2091,2092,2093,2094,"
+            "2095,2096,2097,2098,2100,2101,2102,2103,2104,2105,"
+            "2106,2107,2108,2109,2110,2111,2112,2113,2114,"
+  tahun su: 2021
+  SU5: false
+  nama desa:  lumajang
+    nomor su: 
+            "2065,2066,2067,2068,2069,2070,2071,2072,2073,2074,"
+            "2075,2076,2077,2078,2079,2080,2081,2082,2083,2084,"
+            "2085,2086,2087,2088,2089,2090,2091,2092,2093,2094,"
+            "2095,2096,2097,2098,2100,2101,2102,2103,2104,2105,"
+            "2106,2107,2108,2109,2110,2111,2112,2113,2114,"
+  tahun su: 2021
+
+# Konfigurasi aktif/non-aktif langkah dan koordinat offset klik
+label_configs_bt:
+  - id: menu
+    enabled: true
+    image: label_menu.png
+    confidence: 0.8
+    offset:
+      - 0
+      - 0
+  - id: pencarian_nomor
+    enabled: true
+    image: label_pencarian_nomor.png
+    confidence: 0.8
+    offset:
+      - 0
+      - 0
+  - id: nama_desa
+    enabled: true
+    image: label_nama_desa.png
+    confidence: 0.8
+    offset:
+      - 0
+      - 0
+  - id: pilih_desa_input
+    enabled: true
+    image: label_pilih_desa.png
+    confidence: 0.8
+    action_type: type_desa
+    offset:
+      - 50
+      - 100
+  - id: pilih_desa_dropdown
+    enabled: true
+    image: label_pilih_desa.png
+    confidence: 0.8
+    action_type: click_only
+    offset:
+      - 50
+      - 150
+  - id: nomor_hak
+    enabled: true
+    image: label_nomor_hak.png
+    confidence: 0.8
+    action_type: type_nomor_hak
+    offset:
+      - 0
+      - 0
+  - id: cari_bt
+    enabled: true
+    image: label_cari_bt.png
+    confidence: 0.8
+    offset:
+      - 0
+      - 0
+
+label_configs_su:
+  - id: menu
+    enabled: true
+    image: label_menu.png
+    confidence: 0.8
+    offset:
+      - 0
+      - 0
+  - id: pencarian_nomor
+    enabled: true
+    image: label_pencarian_nomor.png
+    confidence: 0.8
+    offset:
+      - 0
+      - 0
+  - id: nama_desa
+    enabled: true
+    image: label_nama_desa.png
+    confidence: 0.8
+    offset:
+      - 0
+      - 0
+  - id: pilih_desa_su_input
+    enabled: true
+    image: label_pilih_desa_su.png
+    confidence: 0.8
+    action_type: type_desa
+    offset:
+      - 50
+      - 70
+  - id: pilih_desa_su_confirm
+    enabled: true
+    image: label_pilih_desa_su.png
+    confidence: 0.8
+    action_type: click_only
+    offset:
+      - 50
+      - 150
+  - id: nomor_su
+    enabled: true
+    image: label_nomor_su.png
+    confidence: 0.8
+    action_type: type_nomor_su
+    offset:
+      - 0
+      - 0
+  - id: tahun_su
+    enabled: true
+    image: label_tahun_su.png
+    confidence: 0.8
+    action_type: type_tahun_su
+    offset:
+      - 0
+      - 0
+  - id: cari_su
+    enabled: true
+    image: label_cari_su.png
+    confidence: 0.8
+    offset:
+      - 0
+      - 0

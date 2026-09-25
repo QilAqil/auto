@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+env/
+ENV/
+
+# Python compiled/binary
+*.dll
+*.exe
+
+# AI / Machine Learning model
+*.pth
+*.pt
+*.onnx
+*.ckpt
+
+# Internal bundled dependencies
+_internal/
+
+# Build
+build/
+dist/
+*.spec
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+Desktop.ini
