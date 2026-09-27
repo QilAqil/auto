@@ -1,0 +1,265 @@
+{
+  "output_dir": "output",
+  "screenshot_dir": "screenshots",
+  "countdown": 3,
+  "navigasi": {
+    "su": {
+      "nama": "Surat Ukur",
+      "breadcrumb": "Dokumen Pengukuran → Surat Ukur"
+    },
+    "bt": {
+      "nama": "Hak Atas Tanah",
+      "breadcrumb": "Dokumen Hak → Buku Tanah HAT/HMSRS"
+    }
+  },
+  "tabs": {
+    "su": {
+      "nama": "Surat Ukur",
+      "labels": [
+        {
+          "name": "label_tab_detil",
+          "w": 56,
+          "h": 24,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "name": "label_tgl_penomoran",
+          "w": 80,
+          "h": 20,
+          "offset_x": 110,
+          "offset_y": 0
+        },
+        {
+          "name": "label_pembukuan_tanggal",
+          "w": 70,
+          "h": 20,
+          "offset_x": 110,
+          "offset_y": 0
+        },
+        {
+          "name": "label_pembukuan_centang",
+          "w": 18,
+          "h": 18,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "name": "label_pembukuan_jabatan",
+          "w": 70,
+          "h": 20,
+          "offset_x": 120,
+          "offset_y": 0
+        },
+        {
+          "name": "label_pembukuan_nama",
+          "w": 52,
+          "h": 20,
+          "offset_x": 100,
+          "offset_y": 0
+        },
+        {
+          "name": "label_penerbitan_tanggal",
+          "w": 70,
+          "h": 20,
+          "offset_x": 110,
+          "offset_y": 0
+        },
+        {
+          "name": "label_penerbitan_centang",
+          "w": 18,
+          "h": 18,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "name": "label_penerbitan_jabatan",
+          "w": 70,
+          "h": 20,
+          "offset_x": 120,
+          "offset_y": 0
+        },
+        {
+          "name": "label_penerbitan_nama",
+          "w": 52,
+          "h": 20,
+          "offset_x": 100,
+          "offset_y": 0
+        },
+        {
+          "name": "label_di_303",
+          "w": 56,
+          "h": 20,
+          "offset_x": 90,
+          "offset_y": 0
+        },
+        {
+          "name": "label_keadaan_tanah",
+          "w": 120,
+          "h": 20,
+          "offset_x": 180,
+          "offset_y": 0
+        },
+        {
+          "name": "label_tanda_batas",
+          "w": 130,
+          "h": 20,
+          "offset_x": 180,
+          "offset_y": 0
+        },
+        {
+          "name": "label_pengukuran",
+          "w": 180,
+          "h": 36,
+          "offset_x": 180,
+          "offset_y": 0
+        },
+        {
+          "name": "label_hal_lain",
+          "w": 100,
+          "h": 20,
+          "offset_x": 180,
+          "offset_y": 0
+        },
+        {
+          "name": "label_pembukuan_jabatan_item",
+          "w": 180,
+          "h": 22,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "name": "label_pembukuan_nama_item",
+          "w": 180,
+          "h": 22,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "name": "label_penerbitan_jabatan_item",
+          "w": 180,
+          "h": 22,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "name": "label_penerbitan_nama_item",
+          "w": 180,
+          "h": 22,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      ]
+    },
+    "bt": {
+      "nama": "Hak Atas Tanah",
+      "labels": [
+        {
+          "name": "label_tab_detil",
+          "w": 56,
+          "h": 24,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "name": "label_di_301",
+          "w": 56,
+          "h": 20,
+          "offset_x": 90,
+          "offset_y": 0
+        },
+        {
+          "name": "label_petunjuk_bt",
+          "w": 80,
+          "h": 20,
+          "offset_x": 180,
+          "offset_y": 0
+        },
+        {
+          "name": "label_pembukuan_bt_tanggal",
+          "w": 70,
+          "h": 20,
+          "offset_x": 110,
+          "offset_y": 0
+        },
+        {
+          "name": "label_pembukuan_bt_centang",
+          "w": 18,
+          "h": 18,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "name": "label_pembukuan_bt_jabatan",
+          "w": 70,
+          "h": 20,
+          "offset_x": 120,
+          "offset_y": 0
+        },
+        {
+          "name": "label_pembukuan_bt_nama",
+          "w": 52,
+          "h": 20,
+          "offset_x": 100,
+          "offset_y": 0
+        },
+        {
+          "name": "label_penerbitan_bt_tanggal",
+          "w": 70,
+          "h": 20,
+          "offset_x": 110,
+          "offset_y": 0
+        },
+        {
+          "name": "label_penerbitan_bt_centang",
+          "w": 18,
+          "h": 18,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "name": "label_penerbitan_bt_jabatan",
+          "w": 70,
+          "h": 20,
+          "offset_x": 120,
+          "offset_y": 0
+        },
+        {
+          "name": "label_penerbitan_bt_nama",
+          "w": 52,
+          "h": 20,
+          "offset_x": 100,
+          "offset_y": 0
+        },
+        {
+          "name": "label_pembukuan_bt_jabatan_item",
+          "w": 180,
+          "h": 22,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "name": "label_pembukuan_bt_nama_item",
+          "w": 180,
+          "h": 22,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "name": "label_penerbitan_bt_jabatan_item",
+          "w": 180,
+          "h": 22,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "name": "label_penerbitan_bt_nama_item",
+          "w": 180,
+          "h": 22,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      ]
+    }
+  }
+}

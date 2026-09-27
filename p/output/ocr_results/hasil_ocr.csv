@@ -1,0 +1,34 @@
+﻿file,teks_ocr,validasi
+label_di_301.png,Di301 ,COCOK
+label_di_303.png,Di303 ,COCOK
+label_hal_lain.png,Hal Lain-lain ,COCOK
+label_keadaan_tanah.png,Keadaan Tanah,COCOK
+label_pembukuan_bt_centang.png,l,TIDAK DIATUR
+label_pembukuan_bt_jabatan.png,Tidak Ads Pen,TIDAK COCOK
+label_pembukuan_bt_jabatan_item.png,Tidak Ada Penandatangan,TIDAK DIATUR
+label_pembukuan_bt_nama.png,Nama ,COCOK
+label_pembukuan_bt_nama_item.png,,KOSONG / GAGAL
+label_pembukuan_bt_tanggal.png,Tanggal ,COCOK
+label_pembukuan_centang.png,N,TIDAK DIATUR
+label_pembukuan_jabatan.png,Tidak Ads Pen,TIDAK COCOK
+label_pembukuan_jabatan_item.png, TidakAda Penandatangan .,TIDAK DIATUR
+label_pembukuan_nama.png,Nama ,COCOK
+label_pembukuan_nama_item.png,,KOSONG / GAGAL
+label_pembukuan_tanggal.png,Tanggal ,COCOK
+label_penerbitan_bt_centang.png,ai,TIDAK DIATUR
+label_penerbitan_bt_jabatan.png, Tidak Ada Per,TIDAK COCOK
+label_penerbitan_bt_jabatan_item.png, Tidak Ads Penandatangan,TIDAK DIATUR
+label_penerbitan_bt_nama.png,Nama,COCOK
+label_penerbitan_bt_nama_item.png,,KOSONG / GAGAL
+label_penerbitan_bt_tanggal.png,Tanggal,COCOK
+label_penerbitan_centang.png,D,TIDAK DIATUR
+label_penerbitan_jabatan.png,Tidak Ada Pena,TIDAK COCOK
+label_penerbitan_jabatan_item.png,Tidak Ada Penandatangan,TIDAK DIATUR
+label_penerbitan_nama.png,Nama ,COCOK
+label_penerbitan_nama_item.png,ee,TIDAK DIATUR
+label_penerbitan_tanggal.png,Tanggal,COCOK
+label_pengukuran.png,Ce ,TIDAK COCOK
+label_petunjuk_bt.png,Penunjuk,COCOK
+label_tab_detil.png,DETL,TIDAK COCOK
+label_tanda_batas.png,Tanda-Tanda Batas,COCOK
+label_tgl_penomoran.png,Tgl. Penomoran,COCOK

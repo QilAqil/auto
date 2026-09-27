@@ -1,0 +1,181 @@
+# Satu sumber kebenaran. Klik = cari PNG di assets/ + offset dari tengah gambar.
+# ox/oy = geser klik dari tengah label, BUKAN koordinat layar.
+
+hotkey:
+  mulai_su: "\\"
+  mulai_bt: "`"
+  mulai: f1
+  jeda_su: "\\"
+  jeda_bt: "`"
+  reset: f3
+  exit: esc
+
+# Area scan template (left, top, width, height) — mempercepat locateOnScreen
+search_region: [88, 140, 950, 650]
+
+delay:
+  antar_field: 0.2
+  setelah_klik: 0.25
+  setelah_ketik: 0.15
+  setelah_tab: 0.1
+  antar_putaran: 0.5
+
+retry:
+  max_attempts: 3
+  interval_sec: 0.4
+
+locator:
+  grayscale: true
+  confidence: 0.75
+  cache_pad: 80
+
+ocr:
+  enabled: false
+  bahasa: [id, en]
+  allowlist: "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/-. "
+  panjang_tepat: null
+  min_len: 1
+  max_len: 200
+  model_dir: ocr_models
+  pipelines: [hsv_threshold, clahe, invert, bilateral, sharpen]
+
+mode:
+  dry_run: false
+  verify_after_fill: true
+  stop_on_verify_fail: false
+  resume: true
+
+langkah:
+  tab_detil: true
+  penomoran: true
+  pembukuan: true
+  penerbitan: true
+  daftar_isian: true
+  detail_lain: true
+
+# Geser dari tengah label DI ke field Nomor / Tahun / Tanggal
+di_offset:
+  nomor: 110
+  tahun: 250
+  tanggal: 370
+  offset_y: 0
+
+elemen:
+  tab_detil:
+    image: label_tab_detil.png
+    confidence: 0.75
+  fokus_form:
+    image: label_tab_detil.png
+    offset_x: 0
+    offset_y: 40
+
+penomoran:
+  tanggal_enabled: true
+  tanggal_nilai: 04/04/2013
+  image: label_tgl_penomoran.png
+  confidence: 0.9
+  offset_x: 110
+  offset_y: 0
+
+pembukuan:
+  enabled: true
+  centang_enabled: false
+  tanggal_enabled: false
+  tanggal_nilai: 21/07/2011
+  jabatan_teks: kepala seksi survei,
+  nama_teks: karjono
+  tanggal: {image: label_pembukuan_tanggal.png, offset_x: 94, offset_y: 15}
+  centang: {image: label_pembukuan_centang.png, offset_x: 0, offset_y: 0}
+  jabatan: {image: label_pembukuan_jabatan.png, offset_x: 120, offset_y: 34}
+  nama: {image: label_pembukuan_nama.png, offset_x: 120, offset_y: 50}
+
+penerbitan_sertifikat:
+  enabled: true
+  centang_enabled: false
+  tanggal_enabled: true
+  tanggal_nilai: 13/06/2013
+  jabatan_teks: kepala kantor pertanahan
+  nama_teks: agus supri
+  tanggal: {image: label_penerbitan_tanggal.png, offset_x: 90, offset_y: 0}
+  centang: {image: "", offset_x: 0, offset_y: 0}
+  jabatan: {image: label_penerbitan_jabatan.png, offset_x: 120, offset_y: 37}
+  nama: {image: label_penerbitan_nama.png, offset_x: 120, offset_y: 54}
+
+pembukuan_bt:
+  enabled: true
+  centang_enabled: false
+  tanggal_enabled: false
+  tanggal_nilai: ""
+  jabatan_teks: kepala kantor pertanahan
+  nama_teks: agus supri
+  tanggal: {image: label_pembukuan_bt_tanggal.png, offset_x: 94, offset_y: 15}
+  centang: {image: label_pembukuan_bt_centang.png, offset_x: 0, offset_y: 0}
+  jabatan: {image: label_pembukuan_bt_jabatan.png, offset_x: 120, offset_y: 34}
+  nama: {image: label_pembukuan_bt_nama.png, offset_x: 120, offset_y: 50}
+
+penerbitan_sertifikat_bt:
+  enabled: true
+  centang_enabled: false
+  tanggal_enabled: false
+  tanggal_nilai: ""
+  jabatan_teks: kepala kantor pertanahan
+  nama_teks: agus supri
+  tanggal: {image: label_penerbitan_bt_tanggal.png, offset_x: 90, offset_y: 0}
+  centang: {image: "", offset_x: 0, offset_y: 0}
+  jabatan: {image: label_penerbitan_bt_jabatan.png, offset_x: 120, offset_y: 37}
+  nama: {image: label_penerbitan_bt_nama.png, offset_x: 120, offset_y: 54}
+
+daftar_isian:
+  enabled: true
+  kolom:
+    - id: DI 303
+      enabled: true
+      image: label_di_303.png
+      nomor: "0"
+      tahun: "1900"
+      tanggal: 01/01/1900
+
+detail_lain:
+  keadaan_tanah:
+    enabled: false
+    image: label_keadaan_tanah.png
+    offset_x: 180
+    offset_y: 0
+    nilai: Sebidang tanah pekarangan di atasnya berdiri bangunan rumah.
+  tanda_tanda_batas:
+    enabled: true
+    image: label_tanda_batas.png
+    offset_x: 180
+    offset_y: 0
+    nilai: Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997 jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor 3 Tahun 1997 Pasal 22 Ayat 1.
+  pengukuran_dan_pemetaan:
+    enabled: true
+    image: label_pengukuran.png
+    offset_x: 180
+    offset_y: 0
+    mode: template_nama
+    template: "Batas-batas ditunjukan oleh :\n{nama} (pemohon) dan disetujui oleh pihak-pihak berbatasan.\nDitetapkan dan diukur oleh Nur Susanto, S.H."
+  hal_lain_lain:
+    enabled: false
+    image: label_hal_lain.png
+    offset_x: 180
+    offset_y: 0
+    nilai: TIDAK ADA NOMOR GAMBAR UKUR 1871/2021
+
+bt:
+  petunjuk:
+    enabled: false
+    mode: timpa
+    image: label_petunjuk_bt.png
+    offset_x: 180
+    offset_y: 0
+    nilai: Surat Pernyataan Pembagian Waris Tgl.15-12-2010 yang diketahui oleh Kepala Desa Ngadisono.
+  daftar_isian:
+    enabled: true
+    kolom:
+      - id: DI 301
+        enabled: true
+        image: label_di_301.png
+        nomor: "0"
+        tahun: "1900"
+        tanggal: 01/01/1900

@@ -1,0 +1,138 @@
+{
+  "su.label_tab_detil": [
+    310,
+    201
+  ],
+  "su.label_tgl_penomoran": [
+    322,
+    565
+  ],
+  "su.label_pembukuan_tanggal": [
+    1144,
+    412
+  ],
+  "su.label_pembukuan_centang": [
+    1186,
+    444
+  ],
+  "su.label_pembukuan_jabatan": [
+    1348,
+    447
+  ],
+  "su.label_pembukuan_nama": [
+    1155,
+    481
+  ],
+  "su.label_penerbitan_tanggal": [
+    1142,
+    547
+  ],
+  "su.label_penerbitan_centang": [
+    1188,
+    580
+  ],
+  "su.label_penerbitan_jabatan": [
+    1350,
+    583
+  ],
+  "su.label_penerbitan_nama": [
+    1162,
+    619
+  ],
+  "su.label_di_303": [
+    342,
+    673
+  ],
+  "su.label_keadaan_tanah": [
+    302,
+    776
+  ],
+  "su.label_tanda_batas": [
+    297,
+    828
+  ],
+  "su.label_pengukuran": [
+    276,
+    880
+  ],
+  "su.label_hal_lain": [
+    315,
+    922
+  ],
+  "su.label_pembukuan_jabatan_item": [
+    1398,
+    445
+  ],
+  "su.label_pembukuan_nama_item": [
+    1270,
+    482
+  ],
+  "su.label_penerbitan_jabatan_item": [
+    1401,
+    584
+  ],
+  "su.label_penerbitan_nama_item": [
+    1270,
+    620
+  ],
+  "bt.label_tab_detil": [
+    310,
+    250
+  ],
+  "bt.label_di_301": [
+    345,
+    454
+  ],
+  "bt.label_petunjuk_bt": [
+    327,
+    782
+  ],
+  "bt.label_pembukuan_bt_tanggal": [
+    1158,
+    644
+  ],
+  "bt.label_pembukuan_bt_centang": [
+    1198,
+    680
+  ],
+  "bt.label_pembukuan_bt_jabatan": [
+    1354,
+    681
+  ],
+  "bt.label_pembukuan_bt_nama": [
+    1166,
+    714
+  ],
+  "bt.label_penerbitan_bt_tanggal": [
+    1154,
+    799
+  ],
+  "bt.label_penerbitan_bt_centang": [
+    1202,
+    830
+  ],
+  "bt.label_penerbitan_bt_jabatan": [
+    1351,
+    834
+  ],
+  "bt.label_penerbitan_bt_nama": [
+    1165,
+    867
+  ],
+  "bt.label_pembukuan_bt_jabatan_item": [
+    1410,
+    681
+  ],
+  "bt.label_pembukuan_bt_nama_item": [
+    1292,
+    717
+  ],
+  "bt.label_penerbitan_bt_jabatan_item": [
+    1405,
+    835
+  ],
+  "bt.label_penerbitan_bt_nama_item": [
+    1278,
+    867
+  ]
+}

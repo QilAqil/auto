@@ -1,0 +1,158 @@
+trigger_key: f1
+pause_key: \
+reset_key: f3
+exit_key: esc
+search_region:
+- 88
+- 140
+- 950
+- 650
+fokus_form:
+- 349
+- 220
+delay:
+  antar_field: 0.2
+  setelah_klik: 0.25
+  setelah_ketik: 0.15
+  setelah_tab: 0.1
+  antar_putaran: 0.5
+penomoran:
+  tanggal_enabled: false
+  tanggal_nilai: 02/03/2011
+  tanggal_x: 370
+  tanggal_y: 612
+pembukuan:
+  enabled: true
+  centang_enabled: false
+  tanggal_enabled: false
+  tanggal_nilai: 02/03/2011
+  jabatan_teks: kepala seksi survei,
+  nama: ir. mulana
+  tanggal_x: 1192
+  tanggal_y: 465
+  centang_x: 1188
+  centang_y: 501
+  jabatan_x: 1493
+  jabatan_y: 500
+  jabatan_klik2_x: 1493
+  jabatan_klik2_y: 551
+  nama_x: 1347
+  nama_y: 529
+  nama_klik2_x: 1347
+  nama_klik2_y: 581
+penerbitan_sertifikat:
+  enabled: true
+  centang_enabled: false
+  tanggal_enabled: false
+  tanggal_nilai: 15/03/2011
+  jabatan_teks: kepala kantor pertanahan
+  nama: SUGE
+  tanggal_x: 1196
+  tanggal_y: 601
+  centang_x: 1188
+  centang_y: 627
+  jabatan_x: 1477
+  jabatan_y: 633
+  jabatan_klik2_x: 1477
+  jabatan_klik2_y: 679
+  nama_x: 1400
+  nama_y: 666
+  nama_klik2_x: 1400
+  nama_klik2_y: 719
+pembukuan_bt:
+  enabled: true
+  centang_enabled: false
+  tanggal_enabled: false
+  tanggal_nilai: ''
+  jabatan_teks: kepala kantor pertanahan
+  nama: SUGE
+  tanggal_x: 1250
+  tanggal_y: 645
+  centang_x: 1200
+  centang_y: 683
+  jabatan_x: 1333
+  jabatan_y: 680
+  jabatan_klik2_x: 1333
+  jabatan_klik2_y: 735
+  nama_x: 1200
+  nama_y: 712
+  nama_klik2_x: 1200
+  nama_klik2_y: 767
+penerbitan_sertifikat_bt:
+  enabled: true
+  centang_enabled: false
+  tanggal_enabled: false
+  tanggal_nilai: ''
+  jabatan_teks: kepala kantor pertanahan
+  nama: SUGE
+  tanggal_x: 1250
+  tanggal_y: 790
+  centang_x: 1200
+  centang_y: 830
+  jabatan_x: 1330
+  jabatan_y: 826
+  jabatan_klik2_x: 1330
+  jabatan_klik2_y: 786
+  nama_x: 1200
+  nama_y: 866
+  nama_klik2_x: 1205
+  nama_klik2_y: 840
+daftar_isian:
+  enabled: true
+  kolom:
+  - id: DI 303
+    enabled: true
+    nomor: '0'
+    tahun: '1900'
+    tanggal: 01/01/1900
+    y: 726
+    x_nomor: 571
+    x_tahun: 590
+    x_tanggal: 810
+detail_lain:
+  keadaan_tanah:
+    enabled: false
+    nilai: Sebidang tanah pekarangan di atasnya berdiri bangunan rumah.
+    x: 377
+    y: 825
+  tanda_tanda_batas:
+    enabled: true
+    nilai: Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997
+      jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor
+      3 Tahun 1997 Pasal 22 Ayat 1.
+    x: 369
+    y: 880
+  pengukuran_dan_pemetaan:
+    enabled: true
+    template: 'Batas-batas ditunjukan oleh :
+
+      {nama} (pemohon) dan disetujui oleh pihak-pihak berbatasan.
+
+      Ditetapkan dan diukur oleh Tumino HS.'
+    mode: template_nama
+    x: 368
+    y: 928
+  hal_lain_lain:
+    enabled: false
+    nilai: TIDAK ADA NOMOR GAMBAR UKUR 1871/2021
+    x: 370
+bt:
+  petunjuk:
+    enabled: false
+    mode: timpa
+    nilai: BERITA ACARA KESAKSIAN TGL. 10-08-2010 YG DIKETAHUI OLEH IKHSANUDIN SELAKU
+      KEPALA DESA CANDIMULYO
+    x: 380
+    y: 806
+  daftar_isian:
+    enabled: true
+    kolom:
+    - id: DI 301
+      enabled: true
+      nomor: '0'
+      tahun: '1900'
+      tanggal: 01/01/1900
+      y: 455
+      x_nomor: 385
+      x_tahun: 649
+      x_tanggal: 850

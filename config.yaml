@@ -1,168 +1,257 @@
-trigger_key: f9
-pause_key: f10
-reset_key: f11
-exit_key: esc
+hotkey:
+  mulai_su: \
+  mulai_bt: '`'
+  mulai: f1
+  jeda_su: \
+  jeda_bt: '`'
+  reset: f3
+  exit: esc
+search_region:
+- 88
+- 140
+- 950
+- 650
+delay:
+  antar_field: 0.2
+  setelah_klik: 0.25
+  setelah_ketik: 0.15
+  setelah_tab: 0.1
+  antar_putaran: 0.5
+retry:
+  max_attempts: 3
+  interval_sec: 0.4
+locator:
+  grayscale: true
+  confidence: 0.75
+  cache_pad: 80
+ocr:
+  enabled: false
+  bahasa:
+  - id
+  - en
+  allowlist: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/-. '
+  panjang_tepat: null
+  min_len: 1
+  max_len: 200
+  model_dir: ocr_models
+  pipelines:
+  - hsv_threshold
+  - clahe
+  - invert
+  - bilateral
+  - sharpen
+mode:
+  dry_run: false
+  verify_after_fill: true
+  stop_on_verify_fail: false
+  resume: true
+langkah:
+  tab_detil: true
+  penomoran: true
+  pembukuan: true
+  penerbitan: true
+  daftar_isian: true
+  detail_lain: true
+di_offset:
+  nomor: 110
+  tahun: 250
+  tanggal: 370
+  offset_y: 0
+elemen:
+  tab_detil:
+    image: label_tab_detil.png
+    confidence: 0.75
+  fokus_form:
+    image: label_tab_detil.png
+    offset_x: 0
+    offset_y: 40
+penomoran:
+  tanggal_enabled: true
+  tanggal_nilai: 04/04/2013
+  image: label_tgl_penomoran.png
+  confidence: 0.9
+  offset_x: 110
+  offset_y: 0
+pembukuan:
+  enabled: true
+  centang_enabled: false
+  tanggal_enabled: true
+  tanggal_nilai: 21/07/2011
+  jabatan_teks: kepala seksi survei,
+  nama_teks: karjono
+  tanggal:
+    image: label_pembukuan_tanggal.png
+    offset_x: 94
+    offset_y: 15
+  centang:
+    image: label_pembukuan_centang.png
+    offset_x: 0
+    offset_y: 0
+  jabatan:
+    image: label_pembukuan_jabatan.png
+    offset_x: 120
+    offset_y: 34
+  jabatan_klik2:
+    image: ''
+    offset_x: 0
+    offset_y: 0
+  nama:
+    image: label_pembukuan_nama.png
+    offset_x: 120
+    offset_y: 50
+  nama_klik2:
+    image: ''
+    offset_x: 0
+    offset_y: 0
+penerbitan_sertifikat:
+  enabled: true
+  centang_enabled: false
+  tanggal_enabled: true
+  tanggal_nilai: 13/06/2013
+  jabatan_teks: kepala kantor pertanahan
+  nama_teks: agus supri
+  tanggal:
+    image: label_penerbitan_tanggal.png
+    offset_x: 90
+    offset_y: 0
+  centang:
+    image: ''
+    offset_x: 0
+    offset_y: 0
+  jabatan:
+    image: label_penerbitan_jabatan.png
+    offset_x: 120
+    offset_y: 37
+  jabatan_klik2:
+    image: ''
+    offset_x: 0
+    offset_y: 0
+  nama:
+    image: label_penerbitan_nama.png
+    offset_x: 120
+    offset_y: 54
+  nama_klik2:
+    image: ''
+    offset_x: 0
+    offset_y: 0
+pembukuan_bt:
+  enabled: true
+  centang_enabled: false
+  tanggal_enabled: false
+  tanggal_nilai: ''
+  jabatan_teks: kepala kantor pertanahan
+  nama_teks: agus supri
+  tanggal:
+    image: label_pembukuan_bt_tanggal.png
+    offset_x: 94
+    offset_y: 15
+  centang:
+    image: label_pembukuan_bt_centang.png
+    offset_x: 0
+    offset_y: 0
+  jabatan:
+    image: label_pembukuan_bt_jabatan.png
+    offset_x: 120
+    offset_y: 34
+  jabatan_klik2:
+    image: ''
+    offset_x: 0
+    offset_y: 0
+  nama:
+    image: label_pembukuan_bt_nama.png
+    offset_x: 120
+    offset_y: 50
+  nama_klik2:
+    image: ''
+    offset_x: 0
+    offset_y: 0
+penerbitan_sertifikat_bt:
+  enabled: true
+  centang_enabled: false
+  tanggal_enabled: false
+  tanggal_nilai: ''
+  jabatan_teks: kepala kantor pertanahan
+  nama_teks: agus supri
+  tanggal:
+    image: label_penerbitan_bt_tanggal.png
+    offset_x: 90
+    offset_y: 0
+  centang:
+    image: ''
+    offset_x: 0
+    offset_y: 0
+  jabatan:
+    image: label_penerbitan_bt_jabatan.png
+    offset_x: 120
+    offset_y: 37
+  jabatan_klik2:
+    image: ''
+    offset_x: 0
+    offset_y: 0
+  nama:
+    image: label_penerbitan_bt_nama.png
+    offset_x: 120
+    offset_y: 54
+  nama_klik2:
+    image: ''
+    offset_x: 0
+    offset_y: 0
+daftar_isian:
+  enabled: true
+  kolom:
+  - id: DI 303
+    enabled: true
+    image: label_di_303.png
+    nomor: '0'
+    tahun: '1900'
+    tanggal: 01/01/1900
+detail_lain:
+  keadaan_tanah:
+    enabled: true
+    nilai: Sebidang tanah pekarangan di atasnya berdiri bangunan rumah.
+    image: label_keadaan_tanah.png
+    offset_x: 180
+    offset_y: 0
+  tanda_tanda_batas:
+    enabled: true
+    nilai: Telah terpasang sesuai dengan Peraturan Pemerintah Nomor 24 Tahun 1997
+      jo Peraturan Menteri Negara Agraria/ Kepala Badan Pertanahan Nasional Nomor
+      3 Tahun 1997 Pasal 22 Ayat 1.
+    image: label_tanda_batas.png
+    offset_x: 180
+    offset_y: 0
+  pengukuran_dan_pemetaan:
+    enabled: true
+    template: 'Batas-batas ditunjukan oleh :
 
--BT:
-  nama desa: lipursari
-  nomor hak: 
-            "191,196,189,179,176,162,155"
- -SU: 
-  SU1: true
-  nama desa: lipursari
-    nomor su: 
-            "1,102,148,33,2,12,44,34"
-            "23,13,14,24,3,15,35,16,36,73"
-            "17,28,46,29,4,30,37,25,38,5"
-            "31,18,19,32,6,39,20,40,45,21"
-            "7,9,41,42,43,10,22,26,11"
-  tahun su: 2013
-  SU2: false
-  nama desa:  lumajang
-    nomor su: 
-            "1360,1361,1362,1363,"
-  tahun su: 2021
-  SU3: false
-  nama desa:  lumajang
-    nomor su: 
-            "855,856,857,858,859,860,861,862,863,864,"
-            "865,866,867,868,869,870,871,872,873,874,"
-            "875,876,877,878,879,880,881,882,883,884,"
-            "885,886,887,888,889,890,891,892,893,894,"
-            "895,896,897,898,899,900,901,902,903,904,"
-  tahun su: 2021
-  SU4: false
-  nama desa:  lumajang
-    nomor su: 
-            "2065,2066,2067,2068,2069,2070,2071,2072,2073,2074,"
-            "2075,2076,2077,2078,2079,2080,2081,2082,2083,2084,"
-            "2085,2086,2087,2088,2089,2090,2091,2092,2093,2094,"
-            "2095,2096,2097,2098,2100,2101,2102,2103,2104,2105,"
-            "2106,2107,2108,2109,2110,2111,2112,2113,2114,"
-  tahun su: 2021
-  SU5: false
-  nama desa:  lumajang
-    nomor su: 
-            "2065,2066,2067,2068,2069,2070,2071,2072,2073,2074,"
-            "2075,2076,2077,2078,2079,2080,2081,2082,2083,2084,"
-            "2085,2086,2087,2088,2089,2090,2091,2092,2093,2094,"
-            "2095,2096,2097,2098,2100,2101,2102,2103,2104,2105,"
-            "2106,2107,2108,2109,2110,2111,2112,2113,2114,"
-  tahun su: 2021
+      {nama} (pemohon) dan disetujui oleh pihak-pihak berbatasan.
 
-# Konfigurasi aktif/non-aktif langkah dan koordinat offset klik
-label_configs_bt:
-  - id: menu
+      Ditetapkan dan diukur oleh Nur Susanto, S.H.'
+    mode: template_nama
+    image: label_pengukuran.png
+    offset_x: 180
+    offset_y: 0
+  hal_lain_lain:
     enabled: true
-    image: label_menu.png
-    confidence: 0.8
-    offset:
-      - 0
-      - 0
-  - id: pencarian_nomor
+    nilai: TIDAK ADA NOMOR GAMBAR UKUR 1871/2021
+    image: label_hal_lain.png
+    offset_x: 180
+    offset_y: 0
+bt:
+  petunjuk:
     enabled: true
-    image: label_pencarian_nomor.png
-    confidence: 0.8
-    offset:
-      - 0
-      - 0
-  - id: nama_desa
+    mode: timpa
+    nilai: Surat Pernyataan Pembagian Waris Tgl.15-12-2010 yang diketahui oleh Kepala
+      Desa Ngadisono.
+    image: label_petunjuk_bt.png
+    offset_x: 180
+    offset_y: 0
+  daftar_isian:
     enabled: true
-    image: label_nama_desa.png
-    confidence: 0.8
-    offset:
-      - 0
-      - 0
-  - id: pilih_desa_input
-    enabled: true
-    image: label_pilih_desa.png
-    confidence: 0.8
-    action_type: type_desa
-    offset:
-      - 50
-      - 100
-  - id: pilih_desa_dropdown
-    enabled: true
-    image: label_pilih_desa.png
-    confidence: 0.8
-    action_type: click_only
-    offset:
-      - 50
-      - 150
-  - id: nomor_hak
-    enabled: true
-    image: label_nomor_hak.png
-    confidence: 0.8
-    action_type: type_nomor_hak
-    offset:
-      - 0
-      - 0
-  - id: cari_bt
-    enabled: true
-    image: label_cari_bt.png
-    confidence: 0.8
-    offset:
-      - 0
-      - 0
-
-label_configs_su:
-  - id: menu
-    enabled: true
-    image: label_menu.png
-    confidence: 0.8
-    offset:
-      - 0
-      - 0
-  - id: pencarian_nomor
-    enabled: true
-    image: label_pencarian_nomor.png
-    confidence: 0.8
-    offset:
-      - 0
-      - 0
-  - id: nama_desa
-    enabled: true
-    image: label_nama_desa.png
-    confidence: 0.8
-    offset:
-      - 0
-      - 0
-  - id: pilih_desa_su_input
-    enabled: true
-    image: label_pilih_desa_su.png
-    confidence: 0.8
-    action_type: type_desa
-    offset:
-      - 50
-      - 70
-  - id: pilih_desa_su_confirm
-    enabled: true
-    image: label_pilih_desa_su.png
-    confidence: 0.8
-    action_type: click_only
-    offset:
-      - 50
-      - 150
-  - id: nomor_su
-    enabled: true
-    image: label_nomor_su.png
-    confidence: 0.8
-    action_type: type_nomor_su
-    offset:
-      - 0
-      - 0
-  - id: tahun_su
-    enabled: true
-    image: label_tahun_su.png
-    confidence: 0.8
-    action_type: type_tahun_su
-    offset:
-      - 0
-      - 0
-  - id: cari_su
-    enabled: true
-    image: label_cari_su.png
-    confidence: 0.8
-    offset:
-      - 0
-      - 0
+    kolom:
+    - id: DI 301
+      enabled: true
+      image: label_di_301.png
+      nomor: '0'
+      tahun: '1900'
+      tanggal: 01/01/1900

@@ -1,0 +1,18 @@
+# Dependensi OTOBPN Detil v7
+pyautogui==0.9.54
+pyperclip==1.9.0
+pyscreeze==0.1.30
+Pillow>=11.0.0
+PyYAML>=6.0
+keyboard>=0.13.5
+opencv-python-headless>=4.8.0
+numpy>=1.26.0
+
+# Build
+pyinstaller>=6.0
+
+# Tes
+pytest>=8.0
+
+# Opsional OCR (berat). Instal: pip install easyocr
+# easyocr>=1.7.0
